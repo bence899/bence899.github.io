@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+      <title>Cryptography Project</title>
+  </head>
+  <body class="is-preload">
+
+<!-- Header -->
+    <header id="header">
+      <a href="#start" class="logo">Cryptography</a>
+    </header>
+
+<!-- Main -->
+    <div id="main">
+      <!-- Featured Post -->
+        <article class="post featured" id="start">
+          <header class="major">
+            <h2>Cryptography</h2>
+            <div class="pBox">
+              <p>In today’s era, where the rise of Information and communication technologies
+                 (ICT) which are deeply embedded into the majority has created an exponential
+                 increase in development and innovation for our society. According to ‘world bank’
+                 around 40% of the world’s population use the internet today.</p>
+            </div>
+
+            <iframe src="https://data.worldbank.org/share/widget?end=2018&indicators=IT.NET.USER.ZS&start=2018&view=map"
+            width='450' height='300' frameBorder='0' scrolling="no" ></iframe>
+
+            <div class="pBox">
+              <p>We use so many devices such as, mobile phones, laptops, printers, emerging Alexa devices
+                which increases our chance of being vulnerable when using these devices to communicate with others.
+                Therefore, companies that produce devices that relies on the internet have to implement a fundamental
+                and crucial system which provides their consumers to be fully secured. </p>
+            </div>
+            <h3 style="text-align:left;">History</h3>
+            <div class="pBox">
+              <p>The process of Encryption is one of the main fundamental infrastructures that has been developed way
+                before the information era has risen. Going back to 1900BC where a carved inscription was found in the
+                chambers of the tomb nobleman Khnumhotep II, in Egypt. This field of encryption and decryption comes from
+                the field of cryptography and although it was applied many thousands of years ago by using secret messages,
+                 the systematic study of cryptology as a science just started a century ago. </p>
+            </div>
+            <div class="pBox">
+              <p>Around 100BC the famous renowned general and a very talented scholar, ‘Julius Caesar’ was also known to use a
+                simple but yet effective encryption to convey the secret messages to his army. Later the cipher itself was named
+                after him which today is called the Caesar cipher. </p>
+            </div>
+            <h3 style="text-align:left;">Encoding/Decoding String Using Python</h3>
+            <div class="pBox">
+              <p>Using Python, I was able to use the Caesar cipher to develop a simple algorithm that allows a user to encrypt and decrypt
+                a message based on a key. I used python as python provides the ability to easily process data and is much more efficient.</p>
+            </div>
+            <h3 style="text-align:left;">But first, what is a Caesar Cipher</h3>
+            <div class="pBox">
+              <p>As I mentioned before Caesar cipher is named after the famous ‘Julius Caesar’. This cipher is one of the simplest encryption
+                techniques which uses a given key as number to shift the alphabet by that number of places. For example, if the user encrypts
+                the letter ‘A’ by using the key number ‘3’ then the letter ‘A’ will be shifted by 3 places and becomes the letter ‘D’. </p>
+            </div>
+            <h3 style="text-align:left;">Step by Step Guide</h3>
+            <div class="pBox">
+              <p>Firstly, I created a menu option to provide users a guide to what they can do inside my program. Then I declare a string variable
+                 which contains the 26 letters of the alphabet.</p>
+            </div>
+            <h4 style="text-align:left;">Code:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/menuCode.png" alt="Menu Code">
+            </div>
+            <h4 style="text-align:left;">Output:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/menuOutput.png" alt="output of Menu Code">
+            </div>
+            <div class="pBox">
+              <p>Then by creating a while loop, it will allow me to execute both options repeatedly.</p>
+            </div>
+            <h4 style="text-align:left;">Selecting Option E:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/optionE.png" alt="Option E code">
+            </div>
+            <h4 style="text-align:left;">Output:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/optionE_Output.png" alt="Output of Option E code">
+            </div>
+            <h4 style="text-align:left;">Selecting Option D:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/optionD.png" alt="Option D code">
+            </div>
+            <h4 style="text-align:left;">Output:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/optionD_Output.png" alt="Output of Option D code">
+            </div>
+            <div class="pBox">
+              <p>For both Options I create a key variable which will store the users’ key that the user
+                decided to use to encrypt/decrypt the message he wrote.</p>
+            </div>
+            <h4 style="text-align:left;">Encrypt Key Variable:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/encryptKeyCode.png" alt="Encryption key code">
+            </div>
+            <h4 style="text-align:left;">Decrypt Key Variable:</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/decryptKeyCode.png" alt="Encryption key code">
+            </div>
+            <div class="pBox">
+              <p>Now for executing the algorithm to both parts, it must be either encrypting or decrypting
+                the message. But before going through the code lets first understand how the algorithm works.</p>
+            </div>
+            <h3 style="text-align:left;">How does the algorithm work?</h3>
+            <div class="pBox">
+              <p>When the variable ‘text’, receives the users’ input and the variable ‘key’ retrieves the users’
+                choice to how much the text should be shifted by. Looping through the ‘text’ string one letter each
+                 time and comparing to the variable ‘alphabet’. When the letter is found in the ‘alphabet’ variable then
+                  by creating a new variable called ‘encodedText’ I add the new string based on selecting the alphabet letter
+                   and moving that position by the ‘key’ amount and applying a modulus to overlap the shift, making it circular.
+                    This prevents the Out of bounds index error.</p>
+
+            </div>
+            <h4 style="text-align:left;">Adding new string to ‘encodedText’</h4>
+            <div class="pBox">
+              <p>I’m incrementing the letter added to the ‘encodedText’ variable every loop.
+                 By finding the array position of variable ‘alphabet’ where the matched letter is
+                 found and adding the ‘key’ number and setting the new generated number to the array
+                 position and assigning this to the variable ‘encodedText’ using “+=” to increment the
+                 string and not overwrite the variable.</p>
+            </div>
+            <h4 style="text-align:left;">Adding new string to ‘encodedText’</h4>
+            <div class="pBox">
+              <p>% - Modulus <br> Length of alphabet – 26</p>
+                <p>Generated number = Alphabet [(matched index from variable ‘text’ and alphabet) %length of alphabet]
+                encodedText += Alphabet [_Generated Number_].
+              </p>
+            </div>
+            <h4 style="text-align:left;">Diagram:</h4>
+            <img src="images/Cryptography/Diagram.png" alt="Diagram of algorithm">
+            <h3 style="text-align:left;">Now let’s look at the algorithm in practice</h3>
+            <h4 style="text-align:left;">Encryption Algorithm</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/Encryption_Algorithm.png" alt="Encryption algorithm code">
+            </div>
+            <h4 style="text-align:left;">Decryption Algorithm</h4>
+            <div class="pBox">
+              <img src="images/Cryptography/Decryption_Algorithm.png" alt="Decryption algorithm code">
+            </div>
+            <div class="pBox">
+              <p>For shifting, I’m able to execute an algorithm which retrieves the current position number,
+                adds the key number to that number then apply modulus 26 to that number and all that is executed
+                inside “Alphabet [_New Generated Number position_]”.</p>
+            </div>
+
+
+
+          </header>
+
+
+          <ul class="actions special">
+            <li><a href="index.html" class="button large" id="Projects"> Back to Projects/Experience</a></li>
+          </ul>
+        </article>
+
+    </div>
+
+
+  </body>
+</html>
