@@ -216,7 +216,7 @@
     letter-spacing: .1em;
 }
 .section-title {
-    font-size: 4.4rem;
+    font-size: 2.4rem;
 }
 h1 {
     display: block;
@@ -291,7 +291,7 @@ h3 {
 }
 .section-header {
     text-align: center;
-   
+
     padding: 17rem 0 11rem;
     line-height: 4em;
 }
@@ -375,7 +375,7 @@ a {
 .video-container {
     cursor: pointer;
     position: relative;
-      
+
 
 
 
@@ -386,7 +386,7 @@ a {
 }
 
 img {
-    
+
 
     width:100%;
 }
