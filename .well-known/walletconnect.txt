@@ -1,1 +1,1 @@
-wallet-connect-dns-verification=ba65d0e9-3ffe-4f40-b8a8-417f1c09562f=8f4fa254eb67b180899ef5452fc27e479f36b4e050cdceb74564bcbceeeee0bc
+ba65d0e9-3ffe-4f40-b8a8-417f1c09562f=8f4fa254eb67b180899ef5452fc27e479f36b4e050cdceb74564bcbceeeee0bc
